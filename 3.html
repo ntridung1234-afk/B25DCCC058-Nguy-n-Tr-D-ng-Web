@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Giới Thiệu Bản Thân</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Portfolio</div>
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="nav-links" id="nav-links">
+            <a href="#about" class="nav-item">Giới thiệu</a>
+            <a href="#skills" class="nav-item">Kỹ năng</a>
+            <a href="#projects" class="nav-item">Dự án</a>
+            <a href="#contact" class="nav-item">Liên hệ</a>
+        </nav>
+    </header>
+    <section id="about">
+        <h1>Xin chào, tôi là Nguyễn Trí Dũng!</h1>
+        <p>Đây là trang web giới thiệu bản thân của tôi.</p>
+    </section>
+    <section id="skills">
+        <h2>Kỹ Năng</h2>
+        <div class="skills-grid">
+            <div class="skill-card">HTML5</div>
+            <div class="skill-card">CSS </div>
+            <div class="skill-card">JavaScript </div>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>Dự Án Cá Nhân</h2>
+        <div class="projects-grid" id="projects-container">
+            <div class="project-card" data-tags="web app dashboard">
+                <h3>Trang Quản Lý Task</h3>
+                <p>Ứng dụng quản lý công việc hàng ngày với JavaScript.</p>
+                <span class="tag">Web App</span>
+            </div>
+            <div class="project-card" data-tags="mobile landing responsive">
+                <h3>Landing Page Bán Hàng</h3>
+                <p>Giao diện trang đích bán hàng chuẩn SEO, responsive.</p>
+                <span class="tag">Landing Page</span>
+            </div>
+            <div class="project-card" data-tags="game javascript interactive">
+                <h3>Trò Chơi Ca-rô</h3>
+                <p>Game caro 2 người chơi trên nền tảng web.</p>
+                <span class="tag">Game JS</span>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Liên Hệ Với Tôi</h2>
+        <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-group">
+                <label for="fullname">Họ và tên :</label>
+                <input type="text" id="fullname" placeholder="Nhập họ tên...">
+                <small class="error-msg"></small>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Nhập email...">
+                <small class="error-msg"></small>
+            </div>
+            <div class="form-group">
+                <label for="message">Lời nhắn:</label>
+                <textarea id="message" rows="4" placeholder="Nhập lời nhắn..."></textarea>
+                <div class="char-counter"><span id="char-count">0</span>/200 ký tự</div>
+                <small class="error-msg"></small>
+            </div>
+            <button type="submit" class="submit-btn">Gửi Tin Nhắn</button>
+            <div id="form-success" class="success-msg"></div>
+        </form>
+    </section>
+    <footer class="footer">
+        <p>&copy; <span id="current-year"></span> Nguyễn Trí Dũng. All rights reserved.</p>
+    </footer>
+    <script src="1.js"></script>
+</body>
+</html>
