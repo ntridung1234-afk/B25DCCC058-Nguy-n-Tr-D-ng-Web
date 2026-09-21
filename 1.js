@@ -61,4 +61,5 @@ document.addEventListener("DOMContentLoaded", () => {
             errorElement.textContent = message;
         }
     }
+});
 
